@@ -16,3 +16,8 @@ fn main() {
 ```
 
 If you want to run multiple servers in a single loop, you can use lp.handle().spawn() to start them up.
+
+Polling Streams
+---
+When using Streams, be sure to call poll() repeatedly if you get a Poll::Ok() result. Otherwise, it may not
+get to the point where it will re-register the socket for a read.
