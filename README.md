@@ -1,2 +1,3 @@
-# rust-notes
-Notes on Rust
+# Rust Notes
+
+[Futures and Tokio](futures.md)
